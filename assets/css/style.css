@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Play:wght@400;700&family=Roboto+Mono:ital,wght@0,100,200,300;0,700;1,100&display=swap');
+
+:root {
+    /* colors */
+    --background: #1B2029;
+    --main: #D14B00;
+    --subsections: #46F2F1;
+    --black: #2C2E33;
+    --grey1: #41444B;
+    --grey2: #7A7A7A;
+
+    /* fonts */
+    --default: 'Roboto Mono', monospace;
+    --titles: 'Play', sans-serif;
+    --projects: 'Courier Prime', monospace;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0px;
+    color: white;
+    font-family: var(--default);
+    text-align: justify;
+}
+
+h2 {
+    color: var(--main);
+    font-size: 2rem;
+}
+
+section {
+    min-height: 75vh;
+    border: 1px solid white;
+    padding: 5vh 10vw 20vh 15vw;
+}
+
+button, .form-button input{
+    margin: 20px auto;
+    background-color: var(--background);
+    border: 2px solid var(--main);
+    padding: 0.6rem 3rem;
+    font-size: 1rem;
+    color: var(--main);
+    border-radius:20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: var(--default);
+}
+
+button:hover, .form-button input:hover {
+    background-color: var(--main);
+    color: var(--background);
+}
+/* ------------------------------- Navbar ------------------------------- */
+.navbar {
+    position: fixed;
+    padding: 2vh 3vw;
+}
+
+
+.img-m {
+    width: 13%;;
+}
+
+/* ------------------------------- left-list ------------------------------- */
+.left-list {
+    display:flex;
+    position: fixed;
+    bottom: 0px;
+}
+
+.items-list {
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-list li {
+    list-style: none;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.fab {
+    color: var(--main);
+}
+
+.line {
+    border: 1px solid var(--main);
+    height: 8vh;
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------- MAIN SECTION ------------------------------- */
+.presentation h2 {
+    font-size: 1.3rem;
+    margin: 0px;
+}
+
+.presentation p {
+    font-size: 5rem;
+    font-family: var(--titles);
+    margin: 0px;
+}
+
+.presentation span {
+    color: #A48E8E;
+}
+
+.presentation div {
+    margin-top: 25vh;
+}
+
+/*------------------------------- ABOUT ME SECTION ------------------------------- */
+.about-me {
+    padding: 10vh 15vw;
+    min-height: 80vh;
+}
+
+.parent-about-me {
+    margin-top: 80px;
+    height: 30vw;
+    padding: 10vh 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child-about-me {
+    height: auto;
+    display: inline-block;
+}
+
+.abt-text {
+    width: 33vw;
+}
+
+.about-me-title {
+    font-size: 1rem;
+}
+
+.abt-photo {
+    width: 23vw;
+}
+
+.abt-photo img {
+    width: 23vw;
+}
+
+.laptop-icon {
+    display: flex;
+    height: 1rem;
+}
+
+.fas {
+    transform: rotate(27deg);
+    color: var(--main);
+}
+
+/* ------------------------------- PROJECTS SECTION ------------------------------- */
+.projects a {
+    text-decoration: none;
+    color: var(--subsections);
+}
+
+.projects-section {
+    /* style of the box */
+    border: 4px solid var(--subsections);
+    border-radius: 15px;
+    width: 75vw;
+    min-height: 30vh;
+    margin: 50px 0px;
+    padding: 15px;
+    font-family: var(--projects);  
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    position: relative;
+}
+
+.projects-section div {
+    align-self: center;
+    grid-row:1;
+    transition: transform 0.5s;
+}
+
+.game-img-1 {
+    grid-column: 3 /span 7;
+}
+
+.game-img-2 {
+    grid-column: 7 /span 7;
+    z-index: 1;
+}
+
+.game-img-3 {
+    grid-column: 13 /span 7;
+}
+
+.web-img-1 {
+    grid-column: 3 /span 7;
+}
+
+.web-img-2 {
+    grid-column: 9 /span 10;
+}
+
+.pln-img-1 {
+    grid-column: 3 / span 6;
+}
+
+.pln-img-2 {
+    grid-column: 8 /span 6;
+    z-index: 1;
+}
+
+.pln-img-3 {
+    grid-column: 13 /span 6;
+}
+
+.sf-img-1 {
+    grid-column: 3 / span 10;
+}
+
+.sf-img-2 {
+    grid-column: 9 / span 9;
+    z-index: 1;
+}
+
+.projects-section div:hover {
+    transform: scale(1.1);
+}
+
+.projects-section img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.pln-img-2 img {
+    border-radius: 100%;
+}
+
+.pln-img-3 img {
+    width: 75%;
+}
+
+.title-project {
+    grid-column: 22;
+}
+
+.title-project:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------- CONTACT SECTION ------------------------------- */
+.contact {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.contact-gen {
+    display: flex;
+    margin-top: 80px;
+}
+
+
+.contact-title {
+    margin: 0px;
+}
+
+.text-contact {
+    margin-top: 30px;
+}
+
+.contact-icons {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact-icons img {
+    transform: rotate(-10deg);
+    width: 50px;
+    height: 50px;
+}
+
+.img-guitar{
+    bottom: 0px;
+    margin-top: 50vh;
+}
+
+.email-button {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-form {
+    padding: 15px;
+}
+
+.form-contact {
+    border-radius: 20px;
+    background-color: var(--black);
+    width: 35vw;
+    padding: 20px;
+    align-items: center;
+}
+
+.form-contact div {
+    margin: 30px;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-email input {
+    width: calc(50% - 30px);
+}
+
+.subject input {
+    width: calc(100% - 20px);
+}
+
+input, textarea {
+    font-family: var(--default);
+    border-radius: 4px;
+    border: 0px;
+    padding: 10px;
+    background-color: var(--grey1);
+    color: var(--grey2);
+}
+
+textarea {
+    resize: none;
+    width: 96%;
+    height: 20vh;
+}
+
+.form-button input {
+    margin: 0px;
+    width: 15vw;
+    padding: 10px;
+    font-size: 1.5vw;
+    right: 0px;
+    background-color: var(--black);
+}
+
+.form-button div {
+    margin: 0px;
+    margin-left: 18vw;
+}
