@@ -13,13 +13,11 @@
     --default: 'Roboto Mono', monospace;
     --titles: 'Play', sans-serif;
     --projects: 'Courier Prime', monospace;
-
-    /* others */
-    --typewriterSpeed: 2s;
 }
 
 html {
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,6 +28,26 @@ body {
     text-align: justify;
 }
 
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(91, 107, 136);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(68, 76, 92);
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(21, 33, 56);
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
 h2 {
     color: var(--main);
     font-size: 2rem;
@@ -37,7 +55,8 @@ h2 {
 
 section {
     min-height: 75vh;
-    padding: 5vh 10vw 20vh 15vw;
+    padding: 5vh 10vw 20vh 15vw;/* 
+    border: 1px solid white; */
 }
 
 button, .form-button input{
@@ -101,6 +120,56 @@ button:hover, .form-button input:hover {
     padding: 0px;
 }
 
+/* ------------------------------- right list ------------------------------- */
+.right-list {
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+}
+
+.scroll-list {
+    list-style: none;
+    color: var(--main);
+    align-items: center;
+}
+
+.scroll-text {
+    transform: rotate(90deg);
+    margin-bottom: 0px;
+}
+
+.scroll-move {
+    position: absolute;
+    bottom: -10px;/* 
+    animation: up-down 1s linear infinite; */
+    animation: up-down 0.8s ease infinite alternate;
+}
+
+.item-list {
+    bottom: 100px;
+}
+
+@keyframes up-down {
+    from {
+        bottom: -10px;
+    }
+    to {
+        bottom: -30px;
+    }
+}
+
+@keyframes up-down-2 {
+    0% {
+        bottom: -10px;
+    }
+    50% {
+        bottom: -30px;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
+
 /* ------------------------------- MAIN SECTION ------------------------------- */
 .presentation h2 {
     font-size: 1.3rem;
@@ -119,16 +188,12 @@ button:hover, .form-button input:hover {
     width: auto;
 }
 
-.hola {
-    border-right: white;
-}
-
 .name-title {
     color: #A48E8E;
 }
 
 .pres-container {
-    margin-top: 25vh;
+    margin-top: 35vh;
 }
 
 /*------------------------------- ABOUT ME SECTION ------------------------------- */
@@ -166,14 +231,15 @@ button:hover, .form-button input:hover {
 
 .abt-photo img {
     width: 26vw;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+}
+
+.abt-photo img:hover{
+    transform: scale(1.1);
 }
 
 .laptop-icon {
-    display: flex;
-    height: 1rem;
-}
-
-.fas {
     transform: rotate(27deg);
     color: var(--main);
 }
@@ -300,7 +366,6 @@ button:hover, .form-button input:hover {
     margin-top: 80px;
 }
 
-
 .contact-title {
     margin: 0px;
 }
@@ -383,15 +448,16 @@ textarea {
     background-color: var(--black);
 }
 
+/* ------------------------------- responsive index.html ------------------------------- */
 .form-button div {
     margin: 0px;
     margin-left: 18vw;
 }
 
 @media (max-width: 768px) {
-    body {
+    /* body {
         background-color: aqua;
-    }
+    } */
     html {
         font-size: 15px;
     }
@@ -407,13 +473,39 @@ textarea {
 }
 
 @media (max-width: 360px) {
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
     html {
         font-size: 5px;
     }
     .projects-section {
         flex-direction: column;
     }
+}
+
+/* ------------------------------- about-me.html ------------------------------- */
+.parent-abt-me {
+    height: 70%;
+    background-color: var(--black);
+    background-image: url(/assets/img/Primero.png);
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 5vh 5vw;
+}
+
+.child-abt-me {
+    padding: auto 3vw;
+}
+
+.abt-text {
+    width: 60%;
+    padding: 5vh 3vw;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.abt-me-subtitle {
+    color: var(--subsections);
 }

@@ -27,7 +27,7 @@ let duration = 3000;
         distance: '-100px'
     });
 
-    sr.reveal('.left-list', {
+    sr.reveal('.left-list, .right-list', {
         duration: duration,
         origin: 'bottom',
         distance: '100px'
