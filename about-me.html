@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí | Mauricio Díaz</title>
+    <script src="https://kit.fontawesome.com/b9e1530bcc.js" crossorigin="anonymous"></script>
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -35,11 +37,121 @@
     </section>
 
     <section class="exp">
-        <div class="title-exp">
+        <div class="exp-section">
+            <div>
+                <h2 class="abt-me-subtitle">
+                    Experiencia y habilidades
+                </h2>
+            </div>
+            
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad sed iusto autem suscipit voluptates atque quisquam quam, exercitationem qui quibusdam ratione omnis aut quae dolorum voluptas? Nulla nemo iure facere eligendi. Ut inventore a quisquam aut labore distinctio consequatur sed dignissimos, esse amet recusandae nobis. Totam sapiente quas iure obcaecati, fugit aut magnam repellat natus exercitationem labore est saepe quibusdam porro quo, nobis autem hic! Omnis ipsam quo molestias numquam aliquam magnam, suscipit a assumenda soluta inventore quae asperiores sequi officiis impedit reprehenderit voluptates delectus debitis. Quo magnam culpa deleniti aliquid reiciendis similique magni, amet vel! Placeat, quaerat id vel praesentium beatae soluta sit esse possimus odio hic! Mollitia vero consequatur corporis saepe eum, ratione officiis incidunt nisi unde culpa. Ipsam reprehenderit in repudiandae veniam odio natus a quo dolorum incidunt hic commodi vel voluptatibus ipsa amet quaerat eveniet sequi numquam, itaque sapiente asperiores maxime ullam voluptatem excepturi autem? Doloremque perspiciatis facere laudantium amet architecto, magni doloribus tempore at commodi officia eveniet consequatur repellendus non quibusdam reprehenderit numquam odio in nam optio! Deleniti deserunt pariatur ab distinctio quod rerum eaque itaque eum officia veritatis, in, sequi autem ducimus aspernatur maxime? Quisquam obcaecati fuga necessitatibus laboriosam tempora accusantium, voluptatem quas.
+            </div>
+        </div>
 
+        <div class="exp-section">
+            <div>
+                <h2 class="abt-me-subtitle">
+                    Presentaciones
+                </h2>
+            </div>
+    
+            <div>
+                <ul class="abt-me-list">
+                    <li class="presentations-list"> <!-- onclick="location.href='#'" -->
+                        <a href="#portfolio-item-1" class="disabled">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <p id="go-sharp">
+                            Díaz Segura, M. “Entrevista a Gustavo Gomes”. Hora de dialogar. SIAFI. Diciembre, 2021.
+                        </p>
+                    </li>
+                    <br>
+                    <li class="presentations-list">
+                        <a href="#portfolio-item-2" class="play-btn">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <p id="ikal">
+                            Barón, I., Díaz, M., Figueroa, R., Martiñón, J. “Presentación de IKAL”. ExpoSIAFI. SIAFI. Julio, 2021. <a href="https://fb.watch/a2BB85vjB_/" target="_blank" style="color: white;">https://fb.watch/a2BB85vjB_/</a>
+                        </p>
+                    </li>
+                    <br>
+                    <li class="presentations-list">
+                        <a href="#portfolio-item-3" class="play-btn">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <p id="parafrasis">
+                            Díaz Segura, M. “Elaboración de un corpus de parárasis en español para el análisis de similitud textual”. Grupo de Ingeniería Lingüística. Febrero, 2021. <a href="https://fb.watch/a2BHhpLpjN/" target="_blank" style="color: white;">https://fb.watch/a2BHhpLpjN/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-section">
+            <div>
+                <h2 class="abt-me-subtitle">
+                    Asociaciones
+                </h2>
+            </div>
+            <div>
+                <p class=association-text>
+                    Sociedad de Inteligencia Artificial de la Facultad de Ingeniería (SIAFI), UNAM.
+                </p>
+            </div>
+            <div class="groups-icons">
+                <ul class="siafi-icons">
+                    <li class="siafi-icon">
+                        <a href="https://www.facebook.com/UNAM.SIAFI/" target="_blank">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="siafi-icon">
+                        <a href="https://mobile.twitter.com/siafi_unam" target="_blank">
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="siafi-icon">
+                        <a href="https://www.instagram.com/unam.siafi/?hl=en" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="siafi-icon">
+                        <a href="https://www.youtube.com/c/SIAFIUNAM" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="siafi-icon">
+                        <a href="https://www.siafi-unam.com.mx" target="_blank">
+                            <img src="assets/img/mdi_web.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
+    <div class="portfolio-lightboxes">
+
+        <div id="portfolio-item-2" class="portfolio-lightbox">
+            <div class="portfolio-content">
+                <!-- <input type="button" onclick='obtenerURL("item-2");'> -->
+                <a href="#close" class="close" onclick='obtenerURL("item-2");'></a>
+                <iframe id="item-2" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FUNAM.SIAFI%2Fvideos%2F364438591736316%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        <div id="portfolio-item-3" class="portfolio-lightbox">
+            <div class="portfolio-content">
+                <a href="#close" class="close" onclick='obtenerURL("item-3");'></a>
+                <iframe id="item-3" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FingenieriaLinguistica%2Fvideos%2F239540077707249%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
 </html>

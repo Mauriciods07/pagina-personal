@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel</title>
+    <style>
+        .img-content {
+            width: 500px;
+        }
+
+        #image {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-content">
+        <img id="image" src="" alt="">
+    </div>
+
+    <script>
+
+        /* Typewriter effect */
+    let i = 0;
+    let name = ['assets/img/ikal.png','assets/img/SAE.png','assets/img/tenolli.jpeg']
+    let speedName = 1000;
+
+    window.onload = function carrousel() {
+        document.getElementById("image").src = name[i];
+
+        i++;
+
+        if(i>=name.length){
+            i=0;
+        }
+
+        console.log("hola ");
+        delay(1000);
+        console.log("mundo!");
+
+        setTimeout(carrousel, speedName);
+    }
+
+    function delay(delayInms) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(2);
+    }, delayInms);
+  });
+}
+
+    /* carrusel
+    console.log(roja);
+    console.log(rojo);
+    console.log(verde);
+    console.log(azul);
+    console.log(amarillo);
+    console.log(cajas);
+
+    // ocultar todo
+    roja.style.display = 'none';
+    verde.style.display = 'none';
+    azul.style.display = 'none';
+    amarillo.style.display = 'none';
+
+    function ocultar() {
+        for (let i=1; i<5; i++) {
+            if(i==1) {
+                roja.style.display = 'block';
+                verde.style.display = 'none';
+                azul.style.display = 'none';
+                amarillo.style.display = 'none';
+            }
+            if(i==2) {
+                roja.style.display = 'none';
+                verde.style.display = 'block';
+                azul.style.display = 'none';
+                amarillo.style.display = 'none';
+            }
+            if(i==3) {
+                roja.style.display = 'none';
+                verde.style.display = 'none';
+                azul.style.display = 'none';
+                amarillo.style.display = 'none';
+            }
+            if(i==4) {
+                roja.style.display = 'none';
+                verde.style.display = 'none';
+                azul.style.display = 'none';
+                amarillo.style.display = 'none';
+            }
+        }
+    }*/
+
+
+    </script>
+</body>
+</html>
