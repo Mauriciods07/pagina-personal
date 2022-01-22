@@ -1,123 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba</title>
-
-    <style>
-        .articulo {
-  position: relative;
-  width: 270px;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  height: 120px;
-}
- 
-.articulo a {
-  text-decoration: none;
-  color: #000;
-}
- 
-.imagen_articulo, .detalles_articulo {
-  padding: 10px;
-  height: 100px;
-}
- 
-.imagen_articulo {
-  margin-top: 0;
-  background: #000000;
-}
-.imagen_articulo h3 {
-  font-size: 13px;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-family: "Open Sans", arial, sans-serif;
-  text-align: center;
-}
- 
-.detalles_articulo {
-  background: #EEEEEE;
-  color: #666666;
-  font-family: Arial;
-  font-size: 12px;
-}
-
-.imagen_articulo {
-  margin-top: 0;
-  background: #000000;
- 
-  -webkit-transition-property: margin-top;
-  -webkit-transition-duration: .5s;
- 
-  -moz-transition-property: margin-top;
-  -moz-transition-duration: .5s;
- 
-  -o-transition-property: margin-top;
-  -o-transition-duration: .5s;
- 
-  -ms-transition-property: margin-top;
-  -ms-transition-duration: .5s;
- 
-}
-
-.articulo:hover .imagen_articulo {
-  margin-top: -120px;
-}
-    </style>
-
 </head>
 <body>
-    <div class="articulo">
-        <a href="https://www.lawebera.es">
-          <div class="imagen_articulo">
-            <img src="url-imagen" />
-            <h3>www.lawebera.es</h3>
-          </div>
-          <div class="detalles_articulo">
-            <p>En esta página encontrarás cantidad de información para aprender a hacer tus páginas web, además de amplios servicios de diseño web profesional para empresas y particulares.</p>
-          </div>
-        </a>
-      </div>
-
-      <script>
-          jQuery(document).ready(function() {
-  jQuery(".articulo").bind({
-    mouseenter: function() {
-      var self = jQuery(this), imagen = self.data("elementoImagen");
-      if(!imagen) {
-        imagen = jQuery(jQuery(".imagen_articulo", this)[0]);
-        self.data("elementoImagen", imagen);
-      }
-      jQuery(imagen).stop().animate({
-        "margin-top": "-120px"
-      });
-    },
-    mouseleave: function() {
-      jQuery(this).data("elementoImagen").stop().animate({
-        "margin-top": 0
-      });
-    }
-  });
-});
-
-window.addEvent("domready", function() {
-  $$(".articulo").addEvents({
-    mouseenter: function() {
-      var imagen = this.retrieve("elementoImagen");
-      if(!imagen) {
-        imagen = this.getElements(".imagen_articulo")[0];
-        this.store("elementoImagen", imagen);
-      }
-      imagen.tween("margin-top", "-120px");
-    },
-    mouseleave: function() {
-      this.retrieve("elementoImagen").tween("margin-top", 0);
-    }
-  });
-});
-      </script>
-
+    <h1>Script de pruebas</h1>
+    <script src="assets/js/prueba.js"></script>
 </body>
 </html>

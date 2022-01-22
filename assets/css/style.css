@@ -233,6 +233,10 @@ button, .form-button input{
 }
 
 /* ------------------------------- PROJECTS SECTION ------------------------------- */
+.projects {
+    padding: 5vh 10vw 5vh 15vw;
+}
+
 .projects a {
     text-decoration: none;
     color: var(--subsections);
@@ -352,6 +356,7 @@ button, .form-button input{
 .contact {
     display: flex;
     font-size: 1.2rem;
+    padding: 5vh 10vw 10vh 15vw;
 }
 
 .contact-gen {
@@ -410,7 +415,7 @@ button, .form-button input{
 }
 
 .name-email input {
-    width: calc(50% - 30px);
+    width: calc(50% - 25px);
 }
 
 .subject input {
@@ -504,7 +509,7 @@ textarea {
 }
 
 .abt-me-subtitle {
-    margin-top: 10%;
+    margin-top: 5%;
     color: var(--subsections);
     font-size: 1.5rem;
 }
@@ -592,4 +597,35 @@ button:hover, .form-button input:hover {
 
 .portfolio-lightbox:target {
     display: flex;
+}
+
+.career {
+    display: flex;
+}
+
+.exp-title, .exp-school {
+    height: 40%;
+    text-align: left;
+}
+
+.career h6 {
+    margin-top: 0px;
+}
+
+.career h5 {
+    margin:0px;
+}
+
+.exp-hab {
+    background: var(--black);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+    transition: 0.5s;
+}
+
+.exp-hab:hover {
+    transform: scale(1.1);
 }

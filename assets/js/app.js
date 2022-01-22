@@ -1,7 +1,7 @@
 /* Typewriter effect */
 let i = 0;
 let name = 'Mauricio Díaz';
-let title = name + ' Desarrollador web';
+let title = `${name} Desarrollador web`;
 let speedName = 50;
 let speedTitle = 70;
 
@@ -57,45 +57,15 @@ let duration = 3000;
         distance: '100px'
     })
 
-/* Lightbox - detener video al cerrarlo*/
-/*  var stopVideo = () => {
-    var iframes = document.querySelectorAll('iframe');
-    Array.prototype.forEach.call(iframes, iframe => {
-        iframe.contentWindow.postMessage(JSON.stringify({ event: 'command',
-    func: 'stopVideo' }), '*');
-    });
-} 
+/* Lightbox - detener video al cerrarlo */
+function obtenerURL(id) {
+    const pagina = document.getElementById(id);
+    pagina.src = pagina.src;
+}
 
-function pauseVideos() 
-    { 
-        $('iframe').contents().find('video').each(function () 
-        {
-            this.currentTime = 0;
-            this.pause();
-        });
-    }
-
-    let videoStopper = function(id) {
-        let containerElement = document.getElementById(id);
-        let iframe_tag = containerElement.querySelector( 'iframe');
-        let video_tag = containerElement.querySelector( 'video' );
-        if ( iframe_tag) {
-            let iframeSrc = iframe_tag.src;
-            iframe_tag.src = iframeSrc; 
-        }
-        if ( video_tag) {
-            video_tag.pause();
-        }} */
-
-        /* const obtenerURL = () =>{
-            const pagina = document.getElementById('iframe-Safari')
-            let direccionWeb = document.getElementById('urlBuscar').value;
-            console.log(direccionWeb)
-            pagina.src = direccionWeb;
-        } */
-
-        function obtenerURL(id) {
-            const pagina = document.getElementById(id);
-            pagina.src = pagina.src;
-        }
-        
+/* Keyboard events */
+document.addEventListener('keydown', (event) => {
+    const keyName = event.key;
+    console.log(keyName);
+    alert('keydown event\n\n' + 'key: ' + keyName);
+});
