@@ -57,12 +57,6 @@ let duration = 3000;
         distance: '100px'
     })
 
-/* Lightbox - detener video al cerrarlo */
-function obtenerURL(id) {
-    const pagina = document.getElementById(id);
-    pagina.src = pagina.src;
-}
-
 /* Keyboard events */
 document.addEventListener('keydown', (event) => {
     const keyName = event.key;

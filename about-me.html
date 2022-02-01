@@ -48,7 +48,7 @@
                 <div class="career">
                     <div class="exp-hab">
                         <div class="exp-title">
-                            <h3>Ingeniería Eléctrica y Electrónica</h3>
+                            <h3 class="studies-title">Ingeniería Eléctrica y Electrónica</h3>
                         </div>
                         <div class="exp-school">
                             <h5>Facultad de Ingeniería, UNAM</h5>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="exp-hab">
                         <div class="exp-title">
-                            <h3>Fullstack Developer</h3>
+                            <h3 class="studies-title">Fullstack Developer</h3>
                         </div>
                         <div class="exp-school">
                             <h5>Bootcamp Generation Cohorte 8</h5>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="exp-hab">
                         <div class="exp-title">
-                            <h3>Lengua y Literaturas Hispánicas</h3>
+                            <h3 class="studies-title">Lengua y Literaturas Hispánicas</h3>
                         </div>
                         <div class="exp-school">
                             <h5>Filosofía y Letras, UNAM</h5>
@@ -91,16 +91,25 @@
             <div>
                 <ul class="abt-me-list">
                     <li class="presentations-list">
-                        <a href="#portfolio-item-1" class="play-btn">
+                        <a href="#portfolio-item" class="play-btn" onclick="playVideo('tenolli');">
                             <i class="far fa-play-circle"></i>
                         </a>
-                        <p id="go-sharp">
-                            Díaz, M. “Entrevista a Gustavo Gomes”. Hora de dialogar. SIAFI. Diciembre, 2021.
+                        <p id="tenolli">
+                            Centeno, K., Díaz, M., Lázaro, A., Ruiz, D. y Vázquez, Y. "Presentación de Tenolli". ExpoSIAFI. SIAFI. Enero, 2022. <a href="https://fb.watch/aUpncdpL6w/" target="_blank" style="color: white;">https://fb.watch/aUpncdpL6w/</a>
                         </p>
                     </li>
                     <br>
                     <li class="presentations-list">
-                        <a href="#portfolio-item-2" class="play-btn">
+                        <a href="#portfolio-item" class="play-btn" onclick="playVideo('gosharp');">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <p id="go-sharp">
+                            Díaz, M. “Entrevista a Gustavo Gomes”. Hora de dialogar. SIAFI. Diciembre, 2021. <a href="https://youtu.be/V0pfnVSU2FA" target="_blank" style="color: white;">https://youtu.be/V0pfnVSU2FA</a>
+                        </p>
+                    </li>
+                    <br>
+                    <li class="presentations-list">
+                        <a href="#portfolio-item" class="play-btn" onclick="playVideo('ikal');">
                             <i class="far fa-play-circle"></i>
                         </a>
                         <p id="ikal">
@@ -109,7 +118,7 @@
                     </li>
                     <br>
                     <li class="presentations-list">
-                        <a href="#portfolio-item-3" class="play-btn">
+                        <a href="#portfolio-item" class="play-btn" onclick="playVideo('gil');">
                             <i class="far fa-play-circle"></i>
                         </a>
                         <p id="parafrasis">
@@ -178,31 +187,13 @@
 
     <div class="portfolio-lightboxes">
 
-        <div id="portfolio-item-1" class="portfolio-lightbox">
-            <div class="portfolio-content">
-                <a href="#close" class="close" onclick='obtenerURL("item-1")';></a>
-                <iframe id="item-1" width="560" height="315" src="https://www.youtube.com/embed/V0pfnVSU2FA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div id="portfolio-item-2" class="portfolio-lightbox">
-            <div class="portfolio-content">
-                <!-- <input type="button" onclick='obtenerURL("item-2");'> -->
-                <a href="#close" class="close" onclick='obtenerURL("item-2");'></a>
-                <iframe id="item-2" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FUNAM.SIAFI%2Fvideos%2F364438591736316%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            </div>
-        </div>
-
-        <div id="portfolio-item-3" class="portfolio-lightbox">
-            <div class="portfolio-content">
-                <a href="#close" class="close" onclick='obtenerURL("item-3");'></a>
-                <iframe id="item-3" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FingenieriaLinguistica%2Fvideos%2F239540077707249%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            </div>
+        <div id="portfolio-item" class="portfolio-lightbox">
+            
         </div>
    
     </div>
 
-    <script>
+    <!-- <script>
         let string = "";
         let $expTitle = document.querySelector('.exp-title');
         console.log($expTitle);
@@ -212,7 +203,8 @@
             string += keyName;
             console.log(string);
         });
-    </script>
+    </script> -->
+    <script src="assets/js/aboutme-app.js"></script>
 
 </body>
 </html>

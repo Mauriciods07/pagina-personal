@@ -629,3 +629,13 @@ button:hover, .form-button input:hover {
 .exp-hab:hover {
     transform: scale(1.1);
 }
+
+.studies-title span{
+    transition: 0.2s;
+    margin-top: 5px;
+}
+
+.studies-title span:hover {
+    color: var(--main);
+    font-size: 1rem;
+}
