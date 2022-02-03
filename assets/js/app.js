@@ -57,9 +57,9 @@ let duration = 3000;
         distance: '100px'
     })
 
-/* Keyboard events */
+/* /* Keyboard events *
 document.addEventListener('keydown', (event) => {
     const keyName = event.key;
     console.log(keyName);
     alert('keydown event\n\n' + 'key: ' + keyName);
-});
+}); */

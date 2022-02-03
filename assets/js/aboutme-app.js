@@ -44,3 +44,20 @@ window.onload = () => {
         node[i].innerHTML = html;
     }
 };
+
+/* Mostrar íconos de Experiencia y habilidades */
+let $icons = document.querySelectorAll('.exp-hab')
+for(let i=0; i<$icons.length; i++){
+    $icons[i].addEventListener("mouseenter", (e) =>{
+        let icon = $icons[i].querySelector('.studies-icon');
+        console.log(icon);
+        icon.style.display = "block";
+        
+    });
+
+    $icons[i].addEventListener("mouseleave", (e) =>{
+        let icon = $icons[i].querySelector('.studies-icon');
+        console.log(icon);
+        icon.style.display = "none";
+    })
+}
